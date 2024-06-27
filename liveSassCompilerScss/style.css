@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px gray;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding: 1rem 0;
+}
+header div.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 5vw;
+  height: 5vw;
+}
+header div.logo h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+header nav ul li a {
+  color: #09777d;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+main section.bgi {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(../Pictures/D.D.07.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main section.bgi div.filter {
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgba(173, 216, 230, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main section.bgi h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 4rem;
+  margin: 2rem;
+}
+main section.bgi button.start {
+  background-color: lightblue;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-size: 1.5rem;
+  color: #fff;
+}
+main section.content {
+  min-height: 100vh;
+  background-color: rgba(173, 216, 230, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main section.content h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+main section.content h2 span {
+  color: #12948c;
+}
+main section.content div.cards {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.content div.cards div.card {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+main section.content div.cards div.card div.img-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+main section.content div.cards div.card div.img-container img {
+  width: 15vw;
+  height: 15vw;
+  transition: all 0.5s;
+}
+main section.content div.cards div.card div.img-container img:hover {
+  transform: scale(1.5);
+}
+main section.content div.cards div.card h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+main section.content div.cards div.card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+main section.content div.cards div.card a {
+  background-color: #09777d;
+  border-radius: 10px;
+  padding: 0.75rem 0.75rem;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+footer {
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  width: 4vw;
+  height: 4vw;
+}
+footer div.logo h1 {
+  font-size: 1.5rem;
+}
+footer nav {
+  width: 35%;
+}
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer nav ul li {
+  flex-basis: 150px;
+}
+footer nav ul li a {
+  margin: 0 1rem;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+  text-decoration: none;
+}
+footer section.links a img {
+  width: 3.5vw;
+  height: 3.5vw;
+  margin: 0 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  main section.content {
+    min-height: 120vh;
+  }
+  main section.content div.cards div.card div.img-container {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.content div.cards div.card div.img-container img {
+    width: 40vw;
+    height: 40vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer nav ul li a {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  footer section.links {
+    margin-top: 1rem;
+  }
+  footer section.links a img {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}/*# sourceMappingURL=style.css.map */
