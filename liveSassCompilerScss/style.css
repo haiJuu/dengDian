@@ -343,17 +343,17 @@ footer section.links a img {
     height: 15vw;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 829px) {
   main section.content {
     min-height: 120vh;
   }
   main section.content div.cards div.card div.img-container {
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
   }
   main section.content div.cards div.card div.img-container img {
-    width: 40vw;
-    height: 40vw;
+    width: 30vw;
+    height: 30vw;
   }
   footer div.logo img {
     width: 15vw;

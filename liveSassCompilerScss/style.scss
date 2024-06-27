@@ -421,7 +421,7 @@ footer {
     }
 }
 
-@media screen and (min-width:551px)and(max-width:700px) {
+@media screen and (max-width:829px) {
     main {
 
         section.content {
@@ -432,12 +432,12 @@ footer {
                 div.card {
 
                     div.img-container {
-                        width: 40vw;
-                        height: 40vw;
+                        width: 30vw;
+                        height: 30vw;
 
                         img {
-                            width: 40vw;
-                            height: 40vw;
+                            width: 30vw;
+                            height: 30vw;
                         }
                     }
                 }

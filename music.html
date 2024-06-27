@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="./liveSassCompilerScss/style.css">
     <style>
         main section.content {
-            padding: 20px;
+            padding: 20px 0;
+        }
+
+        main section.content div.cards {
+            width: 100%;
         }
 
         main section.content div.cards div.card {
-            justify-content: flex-start;
-            flex: 1 1 450px;
+            /* border: 1px solid black; */
+            flex: 1 1 350px;
+            justify-content: center;
+            align-content: center;
         }
 
         main section.content div.cards div.card div.img-container {
@@ -33,24 +39,23 @@
             text-align: center;
         }
 
-        main section.content div.cards div.card div.music div {
+        /* main section.content div.cards div.card div.music div {
             text-align: center;
-        }
+        } */
 
-        @media screen and (min-width:800px)and (max-width:1600px) {
+        @media screen and (min-width:1000px)and (max-width:1400px) {
             main section.content div.cards div.card {
                 flex-direction: row;
                 justify-content: flex-start;
+                align-items: flex-start;
+                flex: 1 1 450px;
             }
 
             main section.content div.cards div.card div.music {
                 text-align: left;
             }
-
-            main section.content div.cards div.card div.music div {
-                text-align: left;
-            }
         }
+
     </style>
 </head>
 
@@ -114,8 +119,8 @@
                         <img src="./Pictures/music05.jpg" alt="Make You Feel My Love">
                     </div>
                     <div class="music">
-                        <div>2020/06/19</div><br>
-
+                        <div>2020/06/19</div>
+                        <br>跨越時光致敬與傳承經典，<br>願喚醒我們生命中感受到愛的時刻。<br>其表達對另一半堅定忠貞的心，<br>無論人在何方，<br>都會想盡辦法讓心愛的人感受到濃厚的愛意。
                     </div>
                 </div>
                 <div class="card">
@@ -193,7 +198,8 @@
                         <img src="./Pictures/music13.jpg" alt="What a Mistake">
                     </div>
                     <div class="music">
-                        <div>2023/03/17</div><br>燈光昏暗，人影落寞，<br>一個人的房間，該如何從黑暗中掙脫。<br>“我不想，我不願，我不能再重蹈覆轍”，<br>很遺憾沒能將我們的故事續寫，<br>故事結束了，<br>我們散場吧。
+                        <div>2023/03/17</div>
+                        <br>燈光昏暗，人影落寞，<br>一個人的房間，該如何從黑暗中掙脫。<br>“我不想，我不願，我不能再重蹈覆轍”，<br>很遺憾沒能將我們的故事續寫，<br>故事結束了，我們散場吧。
 
                     </div>
                 </div>
@@ -202,8 +208,8 @@
                         <img src="./Pictures/music14.jpg" alt="啾！">
                     </div>
                     <div class="music">
-                        <div>2023/10/13</div><br>
-
+                        <div>2023/10/13</div>
+                        <br>人們總是受制於兩種精神世界的基本衝動，<br>一是為對個體強烈情緒表達的表達，<br>二是為理性所標的超越世界的追尋。<br>當你靜下心將目光投射向過去，<br>充滿可能性的觸角即向未來延伸。
                     </div>
                 </div>
                 <div class="card">
@@ -211,7 +217,7 @@
                         <img src="./Pictures/music15.jpg" alt="自我審視期">
                     </div>
                     <div class="music">
-                        <div>2023/10/30</div><br>
+                        <div>2023/10/30</div><br>夜晚獨自仰望星空，<br>腳下是孤獨的長流，<br>該往哪裡走。<br>人生總是受困於將來和自我，<br>而這正是我們停下來自我審視的意義。
 
                     </div>
                 </div>
@@ -220,8 +226,8 @@
                         <img src="./Pictures/music16.jpg" alt="布拉格廣場">
                     </div>
                     <div class="music">
-                        <div>2024/06/06</div><br>
-
+                        <div>2024/06/06</div>
+                        <br>彷彿一切復刻都帶著時光流淌的重量，<br>回溯儲存的感官記憶裡，賦予新世代的重量。<br>戀人總以為能在布拉格廣場，<br>許下永遠一起的願望，<br>誰又知道許願池裡其實也鋪滿了遙不可及的遺憾。
                     </div>
                 </div>
             </div>
