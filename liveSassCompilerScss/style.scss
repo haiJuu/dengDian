@@ -176,7 +176,6 @@ header {
 
     nav {
         flex: 2 1 400px;
-        // border: 1px dotted black;
 
         ul {
             display: flex;
@@ -200,7 +199,6 @@ header {
 }
 
 main {
-    // border: 1px solid black;
 
     section.bgi {
         width: 100%;
@@ -218,7 +216,6 @@ main {
 
 
         div.filter {
-            // border: 1px solid black;
             width: 100%;
             min-height: 90vh;
             background-color: rgba(173, 216, 230, 0.2);
@@ -267,7 +264,7 @@ main {
 
         div.cards {
             width: 80%;
-            min-height: 80vh;
+            min-height: 70vh;
             display: flex;
             flex-wrap: wrap;
 
@@ -287,8 +284,8 @@ main {
                     margin-bottom: 1rem;
 
                     img {
-                        width: 15vw;
-                        height: 15vw;
+                        width: inherit;
+                        height: inherit;
                         transition: all 0.5s;
 
                         &:hover {
@@ -299,9 +296,8 @@ main {
                 }
 
                 h4 {
-
                     font-size: 1.5rem;
-                    line-height: 2rem;
+                    line-height: 3rem;
                 }
 
                 p {
@@ -331,7 +327,6 @@ footer {
     align-items: center;
 
     div.logo {
-        // border: 1px solid black;
         display: flex;
         align-items: center;
 
@@ -346,8 +341,7 @@ footer {
     }
 
     nav {
-        // border: 1px solid black;
-        width: 35%;
+        width: 50%;
 
         ul {
             display: flex;
@@ -356,7 +350,6 @@ footer {
             list-style-type: none;
 
             li {
-                // border: 1px solid black;
                 flex-basis: 150px;
 
                 a {
@@ -372,7 +365,6 @@ footer {
     }
 
     section.links {
-        // border: 1px solid black;
 
         a {
 
@@ -385,42 +377,23 @@ footer {
     }
 }
 
+
 // scrollbar
-// width
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 10px; // width
 }
 
-// track
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f1f1; // track
 }
 
-// handle
 ::-webkit-scrollbar-thumb {
-    background: #09777d;
+    background: #09777d; // handle
 }
 
 
 // RWD
-@media screen and (max-width:550px) {
-    header {
-        div.logo {
-            margin-left: 0.5rem;
-
-            // h1 {
-            //     font-size: 1.5rem;
-            // }
-
-            img {
-                width: 15vw;
-                height: 15vw;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:829px) {
+@media screen and (max-width:900px) {
     main {
 
         section.content {
@@ -431,12 +404,12 @@ footer {
                 div.card {
 
                     div.img-container {
-                        width: 30vw;
-                        height: 30vw;
+                        width: 25vw;
+                        height: 25vw;
 
                         img {
-                            width: 30vw;
-                            height: 30vw;
+                            width: inherit;
+                            height: inherit;
                         }
                     }
                 }
@@ -473,6 +446,75 @@ footer {
                 img {
                     width: 7.5vw;
                     height: 7.5vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    header {
+        div.logo {
+            margin-left: 0.5rem;
+
+            img {
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+    }
+
+    main {
+
+        section.bgi {
+
+            h3 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+
+            button.start {
+                padding: 0.75rem 1.25rem;
+                font-size: 1.25rem;
+            }
+        }
+
+        section.content {
+
+            h2 {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            div.cards {
+
+                div.card {
+
+                    div.img-container {
+                        width: 40vw;
+                        height: 40vw;
+
+                        img {
+                            width: inherit;
+                            height: inherit;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 1.25rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.25rem;
+                    }
+
+                    a {
+                        padding: 0.75rem 0.75rem;
+                        margin-top: 1rem;
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

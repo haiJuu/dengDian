@@ -233,7 +233,7 @@ main section.content h2 span {
 }
 main section.content div.cards {
   width: 80%;
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -253,8 +253,8 @@ main section.content div.cards div.card div.img-container {
   margin-bottom: 1rem;
 }
 main section.content div.cards div.card div.img-container img {
-  width: 15vw;
-  height: 15vw;
+  width: inherit;
+  height: inherit;
   transition: all 0.5s;
 }
 main section.content div.cards div.card div.img-container img:hover {
@@ -262,7 +262,7 @@ main section.content div.cards div.card div.img-container img:hover {
 }
 main section.content div.cards div.card h4 {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 main section.content div.cards div.card p {
   font-size: 1rem;
@@ -297,7 +297,7 @@ footer div.logo h1 {
   font-size: 1.5rem;
 }
 footer nav {
-  width: 35%;
+  width: 50%;
 }
 footer nav ul {
   display: flex;
@@ -334,26 +334,17 @@ footer section.links a img {
   background: #09777d;
 }
 
-@media screen and (max-width: 550px) {
-  header div.logo {
-    margin-left: 0.5rem;
-  }
-  header div.logo img {
-    width: 15vw;
-    height: 15vw;
-  }
-}
-@media screen and (max-width: 829px) {
+@media screen and (max-width: 900px) {
   main section.content {
     min-height: 120vh;
   }
   main section.content div.cards div.card div.img-container {
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
   }
   main section.content div.cards div.card div.img-container img {
-    width: 30vw;
-    height: 30vw;
+    width: inherit;
+    height: inherit;
   }
   footer div.logo img {
     width: 15vw;
@@ -369,5 +360,46 @@ footer section.links a img {
   footer section.links a img {
     width: 7.5vw;
     height: 7.5vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  main section.bgi h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  main section.bgi button.start {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+  }
+  main section.content h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  main section.content div.cards div.card div.img-container {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.content div.cards div.card div.img-container img {
+    width: inherit;
+    height: inherit;
+  }
+  main section.content div.cards div.card h4 {
+    font-size: 1.25rem;
+  }
+  main section.content div.cards div.card p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  main section.content div.cards div.card a {
+    padding: 0.75rem 0.75rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=style.css.map */
