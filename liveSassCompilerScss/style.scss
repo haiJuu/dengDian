@@ -159,8 +159,7 @@ header {
         // flex-grow: 5;
         // flex-shrink: 1;
         // flex-basis: 400px;
-        // border: 1px dotted black;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
 
         img {
             width: 5vw;
@@ -170,6 +169,7 @@ header {
         h1 {
             font-size: 1.75rem;
             font-weight: 400;
+            line-height: 2.25rem;
         }
 
     }
@@ -181,7 +181,8 @@ header {
             display: flex;
             justify-content: space-around;
             list-style-type: none;
-            margin-top: 0.5rem;
+            margin-top: 1rem;
+            text-align: center;
 
             li {
 
@@ -244,12 +245,12 @@ main {
     }
 
     section.content {
-        // border: 1px solid black;
         min-height: 100vh;
         background-color: rgba(173, 216, 230, 20%);
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
         text-align: center;
 
         h2 {
@@ -274,7 +275,7 @@ main {
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-                padding: 1rem;
+                padding: 1.5rem 1rem;
 
                 div.img-container {
                     overflow: hidden;
@@ -325,6 +326,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem;
 
     div.logo {
         display: flex;
@@ -333,10 +335,6 @@ footer {
         img {
             width: 4vw;
             height: 4vw;
-        }
-
-        h1 {
-            font-size: 1.5rem;
         }
     }
 
@@ -357,7 +355,7 @@ footer {
                     color: #000;
                     font-size: 1.25rem;
                     font-weight: 600;
-                    line-height: 2rem;
+                    line-height: 2.25rem;
                     text-decoration: none;
                 }
             }
@@ -365,6 +363,7 @@ footer {
     }
 
     section.links {
+        margin: 1rem;
 
         a {
 
@@ -394,6 +393,17 @@ footer {
 
 // RWD
 @media screen and (max-width:900px) {
+
+    header {
+        div.logo {
+
+            img {
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+    }
+    
     main {
 
         section.content {
@@ -427,6 +437,8 @@ footer {
 
         nav {
 
+            width: 60%;
+
             ul {
 
                 li {
@@ -434,6 +446,10 @@ footer {
                     a {
                         font-size: 1rem;
                         line-height: 1.75rem;
+
+                        i {
+                            font-size: 0.75rem;
+                        }
                     }
                 }
             }
@@ -456,7 +472,6 @@ footer {
 @media screen and (max-width:550px) {
     header {
         div.logo {
-            margin-left: 0.5rem;
 
             img {
                 width: 15vw;
@@ -517,6 +532,13 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    footer {
+
+        nav {
+            width: 70%;
         }
     }
 }

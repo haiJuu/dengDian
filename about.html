@@ -4,29 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鄧典UnknownStyleSex</title>
-    <meta name="description" content="我們提供夏威夷旅遊租借服務，例如：衝浪板、車子、帳篷等等">
     <meta name="robots" content="index,follow">
+    <title>鄧典UnknownStyleSex</title>
+    <base target="_top">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
     <!-- css -->
     <link rel="stylesheet" href="./liveSassCompilerScss/style.css">
     <style>
         main section.bgi {
-            min-height:75vh;
+            min-height: 50vh;
             background-image: none;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: flex-start;
+            padding: 20px 0;
         }
 
-        main section.bgi div:nth-child(1){
-            margin-right: 50px;
+        main section.bgi div:nth-child(1) {
+            width: 45%;
+            margin: 1rem;
         }
 
-        main section.bgi div:nth-child(2){
-            border: 1px solid black;
+        main section.bgi div:nth-child(1) img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+        }
+
+        main section.bgi div:nth-child(2) {
+            width: 35%;
+            min-height: 27vw;
+            margin: 1rem;
+        }
+
+        main section.bgi div:nth-child(2) table {
+            min-height: inherit;
+        }
+
+        main section.bgi div:nth-child(2) table tr td {
+            padding: 5px;
+        }
+
+        main section.bgi div:nth-child(2) table tr td:nth-child(1) {
+            min-width: 80px;
+        }
+
+        main section.bgi div:nth-child(2) table tr td:nth-child(2) {
             text-align: left;
         }
 
@@ -34,80 +62,164 @@
             min-height: 25vh;
             flex-direction: row;
             flex-wrap: wrap;
-            padding: 10px;
+            padding: 20px 0;
             text-align: left;
         }
 
+        main section.content {
+            min-height: 20vh;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        main section.content div {
+            width: 80%;
+            margin: 1rem auto;
+        }
+
+        main section.content div p {
+            line-height: 2rem;
+        }
+
+        main section.content div p:nth-child(1) {
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            border-left: 2.5px solid black;
+        }
+
+        @media screen and (max-width:1440px) {
+
+            main section.bgi div:nth-child(1) {
+                width: 75%;
+            }
+
+            main section.bgi div:nth-child(2) {
+                width: 75%;
+            }
+
+            main section.content div {
+                width: 75%;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="./Icons/logo01.png" alt="Logo">
-            <h1>鄧典.UnknownStyleSex</h1>
+            <h1>D.D<img src="./Icons/logo01.png" alt="Logo">UnknownStyleSex</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="./index.html" target="_top">主頁</a></li>
-                <li><a href="./about.html" target="_top">關於鄧典</a></li>
-                <li><a href="./music.html" target="_top">音樂作品</a></li>
-                <li><a href="./activity.html" target="_top">演出節目</a></li>
+                <li><a href="./index.html">主頁</a></li>
+                <li><a href="./about.html">關於鄧典<br><i class="fas fa-regular fa-caret-down"></i></a></li>
+                <li><a href="./music.html">音樂作品</a></li>
+                <li><a href="./activity.html">活動節目</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="bgi">
-            <div><img src="./Pictures/D.D.01.jpg" alt=""></div>
+            <div><img src="./Pictures/D.D.01.jpg"></div>
             <div>
-                英文名：Deng Dian
-                暱稱：D.D.<br>
-                國籍：中華人民共和國<br>
-                出生：1999年3月13日（25歲）<br>
-                中華人民共和國河南省<br>
-                職業：歌手<br>
-                語言：普通話、英語<br>
-                教育程度：大學<br>
-                母校：四川音樂學院流行音樂學院<br>
-                音樂類型：華語流行、流行、R&B<br>
-                出道地點：中華人民共和國<br>
-                出道日期：2018年9月7日<br>
-                出道作品：《D》<br>
-                代表作品：《神魂顛倒》《明日等你》《What a Mistake》<br>
-                活躍年代：2018年至今<br>
-                唱片公司：索尼音樂<br>
-                經紀公司：索尼音樂<br>
+                <table>
+                    <tr>
+                        <td>英文名字：</td>
+                        <td>Deng Dian</td>
+                    </tr>
+                    <tr>
+                        <td>暱　　稱：</td>
+                        <td>D.D.</td>
+                    </tr>
+                    <tr>
+                        <td>國　　籍：</td>
+                        <td>中華人民共和國</td>
+                    </tr>
+                    <tr>
+                        <td>出　　生：</td>
+                        <td>1999年3月13日（25歲）於中華人民共和國河南省</td>
+                    </tr>
+                    <tr>
+                        <td>職　　業：</td>
+                        <td>歌手</td>
+                    </tr>
+                    <tr>
+                        <td>語　　言：</td>
+                        <td>普通話、英語</td>
+                    </tr>
+                    <tr>
+                        <td>教育程度：</td>
+                        <td>大學</td>
+                    </tr>
+                    <tr>
+                        <td>母　　校：</td>
+                        <td>四川音樂學院流行音樂學院</td>
+                    </tr>
+                    <tr>
+                        <td>音樂類型：</td>
+                        <td>華語流行、流行、R&B</td>
+                    </tr>
+                    <tr>
+                        <td>出道日期：</td>
+                        <td>2018年9月7日</td>
+                    </tr>
+                    <tr>
+                        <td>出道作品：</td>
+                        <td>《D》</td>
+                    </tr>
+                    <tr>
+                        <td>代表作品：</td>
+                        <td>《神魂顛倒》《明日等你》《What a Mistake》</td>
+                    </tr>
+                    <tr>
+                        <td>活躍年代：</td>
+                        <td>2018年至今</td>
+                    </tr>
+                    <tr>
+                        <td>唱片公司：</td>
+                        <td>索尼音樂</td>
+                    </tr>
+                    <tr>
+                        <td>經紀公司：</td>
+                        <td>索尼音樂</td>
+                    </tr>
+                </table>
             </div>
         </section>
         <section class="content">
-            <div>中國流行音樂新生代男歌手，新生代魔嗓、絲滑R&B是他鮮明的音樂人格。
-
-                <p>鄧典1999年3月13日出生於河南省焦作市，受權志龍的影響，他打扮獨特，衣櫃裏三分之二的衣服都是從網上挑來的顏色鮮豔、剪裁誇張的復古女裝。</p>
+            <div>
+                <p>個人生活</p>
+                <p>中國流行音樂新生代男歌手，新生代魔嗓、絲滑R&B是他鮮明的音樂人格。</p>
+                <p>鄧典1999年03月13日出生於河南省焦作市，受權志龍的影響，他打扮獨特，衣櫃裏三分之二的衣服都是從網上挑來的顏色鮮豔、剪裁誇張的復古女裝。</p>
                 <p>高中時期，他最大的消遣愛好是在宿舍偷偷聽MP3，課餘時間常常坐在座位上哼唱英文歌。</p>
                 <p>因為藝術生的分數線要低一些，所以他在高三下半學期學了音樂，並考入四川音樂學院。</p>
-
-
-                2018年11月18日，獲得「音為青春·中國大學音樂超級聯賽」校園人氣歌手獎。
-                2018年9月7日，最終獲得《明日之子第二季》全國總決賽第4名，是九大廠牌之一，從而正式出道。
-
-                2019年6月，正式成為索尼音樂合作藝人。
-
-                2021年，全面加盟索尼音樂，發行熱門單曲《孩子氣》、《星空下的海》。
-                2021年11月，全新單曲《神魂顛倒》的短視頻火熱發酵，成為年度現象級單曲。
-
-                2022年2月，演唱的《嘉獎》錄入為華流音樂大碟徵集活動推出第二首大碟優秀作品。
-
-                2023年7月17日，最終獲得《青年π計劃》總決選第3名，成為六邊形戰士。
-                2023年7月9日，獲得「TMEA騰訊音樂娛樂盛典」年度突破歌手。
             </div>
-
+            <div>
+                <p>重要經歷</p>
+                <p>2018年09月07日／在《明日之子第二季》全國總決賽最終獲得第4名，是九大廠牌之一，從而正式出道。</p>
+                <p>2019年06月　　／正式成為索尼音樂合作藝人。</p>
+                <p>2021年　　　　／全面加盟索尼音樂，發行熱門單曲《孩子氣》、《星空下的海》。</p>
+                <p>2021年11月　　／全新單曲《神魂顛倒》的短視頻火熱發酵，成為年度現象級單曲。</p>
+                <p>2022年02月　　／演唱的《嘉獎》錄入為華流音樂大碟徵集活動推出第二首大碟優秀作品。</p>
+                <p>2023年07月17日／最終獲得《青年π計劃》總決選第3名，成為六邊形戰士。</p>
+            </div>
+            <div>
+                <p>獲得獎項</p>
+                <p>2023年07月09日／獲得「TMEA騰訊音樂娛樂盛典」年度突破歌手。</p>
+                <p>2018年11月18日／獲得「音為青春·中國大學音樂超級聯賽」校園人氣歌手獎。</p>
+            </div>
         </section>
 
     </main>
 
     <footer style="min-height: 15vh;">
         <section class="links">
+            <a href="https://www.instagram.com/d.d.of/" target="_blank"><img src="./Icons/instagram.svg"
+                    alt="weibo"></a>
             <a href="https://weibo.com/u/5863441494" target="_blank"><img src="./Icons/weibo.svg" alt="weibo"></a>
             <a href="https://www.kkbox.com/tw/tc/song-list/HZJjT51Bb4xUEJYH94G7fnXg==" target="_blank"><img
                     src="./Icons/kkbox.svg" alt="kkbox"></a>
@@ -117,7 +229,7 @@
                     src="./Icons/youtube.svg" alt="youtube"></a>
         </section>
         <section class="copy">
-            <div>Copyright © 2024 Haijuu</div>
+            <div>版權所有 © 2024 Haijuu</div>
         </section>
     </footer>
 
